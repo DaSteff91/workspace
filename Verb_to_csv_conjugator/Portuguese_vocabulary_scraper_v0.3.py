@@ -1,4 +1,5 @@
 # Making the code easier readable
+# added only this comment 24.11.2024 to see what happens
 
 import re
 from bs4 import BeautifulSoup
@@ -39,4 +40,4 @@ df = pd.DataFrame({"A" : [verbo], "B" : df_conjugacao, "C": df_tags})
 
 csv_name = "{}_{}_{}".format(verbo,input_mode,input_time).lower()
 
-df.to_csv(rf"/media/sf_Share_VM/{csv_name}.csv", mode='a', header=None, index=False)
+df.to_csv(rf"/home/steff/Documents/2024/Lernen/Python/Anki_project/{csv_name}.csv", mode='a', header=None, index=False)
